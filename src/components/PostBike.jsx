@@ -44,7 +44,7 @@ const PostBike = ({setRefresh}) => {
 
         console.log('color: ', color)
 
-        fetch('https://dealership-vehicle-inventory.herokuapp.com/bikes', {
+        fetch('https://dealership-vehicle-inventory.herokuapp.com/bikes/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

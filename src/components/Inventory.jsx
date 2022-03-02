@@ -93,7 +93,7 @@ const Inventory = () => {
     }
 
     const deleteBike = (id) => {
-        fetch('https://dealership-vehicle-inventory.herokuapp.com/bikes' + id, {
+        fetch('https://dealership-vehicle-inventory.herokuapp.com/bikes/' + id, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
