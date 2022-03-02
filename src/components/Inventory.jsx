@@ -73,7 +73,7 @@ const Inventory = () => {
     ]
 
     useEffect(() => {
-        fetch('http://localhost:3000/bikes')
+        fetch('https://dealership-vehicle-inventory.herokuapp.com/bikes')
             .then(res => res.json())
             .then(data => setBikes(data))
         setRefresh(false)
@@ -93,7 +93,7 @@ const Inventory = () => {
     }
 
     const deleteBike = (id) => {
-        fetch('http://localhost:3000/bikes/' + id, {
+        fetch('https://dealership-vehicle-inventory.herokuapp.com/bikes' + id, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

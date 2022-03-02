@@ -44,7 +44,7 @@ const UpdateBike = ({showForm, setShowForm, selectedBike, setRefresh, setSelecte
 
         console.log('color: ', color)
 
-        fetch('http://localhost:3000/bikes/' + selectedBike._id, {
+        fetch('https://dealership-vehicle-inventory.herokuapp.com/bikes' + selectedBike._id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
